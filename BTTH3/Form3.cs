@@ -30,7 +30,7 @@ namespace BTTH3
                     {
                         "remix",
                         "acoustic",
-                        "lofi",
+                        "rap",
                     };
             for(int k = 0; k < type.Count; k++)
             {
@@ -105,7 +105,7 @@ namespace BTTH3
             //        {
             //            "remix",
             //            "acoustic",
-            //            "lofi",
+            //            "rap",
             //        };
             //loadSongs(type);
         }
@@ -136,10 +136,12 @@ namespace BTTH3
                     {
                         "remix",
                         "acoustic",
-                        "lofi",
+                        "rap",
                     };
             loadSongs(type);
         }
+
+        private bool flatRemix = false;
 
         private void button2_Click(object sender, EventArgs e)
         {
@@ -148,7 +150,30 @@ namespace BTTH3
                         "remix",
                     };
             loadSongs(type);
+            //if (flatRemix)
+            //{
+            //    var type = new List<string>()
+            //        {
+            //            "remix",
+            //        };
+            //    loadSongs(type);
+            //    flatRemix = !flatRemix;
+            //}
+            //else
+            //{
+            //    var type = new List<string>()
+            //        {
+            //            "remix",
+            //            "acoustic",
+            //            "rap",
+            //        };
+            //    loadSongs(type);
+            //    flatRemix = !flatRemix;
+            //}
+
         }
+
+        private bool flatAcoustic = false;
 
         private void button3_Click(object sender, EventArgs e)
         {
@@ -157,15 +182,59 @@ namespace BTTH3
                         "acoustic",
                     };
             loadSongs(type);
+            //flatAcoustic = !flatAcoustic;
+            //if (flatAcoustic)
+            //{
+            //    var type = new List<string>()
+            //        {
+            //            "acoustic",
+            //        };
+            //    loadSongs(type);
+            //    flatAcoustic = !flatAcoustic;
+            //}
+            //else
+            //{
+            //    var type = new List<string>()
+            //        {
+            //            "remix",
+            //            "acoustic",
+            //            "rap",
+            //        };
+            //    loadSongs(type);
+            //    flatAcoustic = !flatAcoustic;
+            //}
         }
+
+        private bool flatRap = false;
 
         private void button4_Click(object sender, EventArgs e)
         {
             var type = new List<string>()
                     {
-                        "lofi",
+                        "rap",
                     };
             loadSongs(type);
+
+            //if (flatRap)
+            //{
+            //    var type = new List<string>()
+            //        {
+            //            "rap",
+            //        };
+            //    loadSongs(type);
+            //    flatRap = !flatRap;
+            //}
+            //else
+            //{
+            //    var type = new List<string>()
+            //        {
+            //            "remix",
+            //            "acoustic",
+            //            "rap",
+            //        };
+            //    loadSongs(type);
+            //    flatRap = !flatRap;
+            //}
         }
 
         private void button5_Click(object sender, EventArgs e)

@@ -138,7 +138,7 @@
             this.button4.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
             this.button4.Size = new System.Drawing.Size(303, 80);
             this.button4.TabIndex = 2;
-            this.button4.Text = "                 Lofi";
+            this.button4.Text = "                 Rap";
             this.button4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button4.UseVisualStyleBackColor = false;
             this.button4.Click += new System.EventHandler(this.button4_Click);

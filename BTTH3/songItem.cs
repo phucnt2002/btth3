@@ -49,5 +49,6 @@ namespace BTTH3
                 lab_author.Text = value;
             }
         }
+
     }
 }
