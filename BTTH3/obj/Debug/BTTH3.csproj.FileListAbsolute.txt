@@ -1,0 +1,61 @@
+D:\HK1 2022-2023\CS511\BTTH\BTTH3\BTTH3\bin\Debug\BTTH3.exe.config
+D:\HK1 2022-2023\CS511\BTTH\BTTH3\BTTH3\bin\Debug\BTTH3.exe
+D:\HK1 2022-2023\CS511\BTTH\BTTH3\BTTH3\bin\Debug\BTTH3.pdb
+D:\HK1 2022-2023\CS511\BTTH\BTTH3\BTTH3\obj\Debug\BTTH3.csproj.AssemblyReference.cache
+D:\HK1 2022-2023\CS511\BTTH\BTTH3\BTTH3\obj\Debug\BTTH3.csproj.SuggestedBindingRedirects.cache
+D:\HK1 2022-2023\CS511\BTTH\BTTH3\BTTH3\obj\Debug\BTTH3.Form1.resources
+D:\HK1 2022-2023\CS511\BTTH\BTTH3\BTTH3\obj\Debug\BTTH3.Properties.Resources.resources
+D:\HK1 2022-2023\CS511\BTTH\BTTH3\BTTH3\obj\Debug\BTTH3.csproj.GenerateResource.cache
+D:\HK1 2022-2023\CS511\BTTH\BTTH3\BTTH3\obj\Debug\BTTH3.csproj.CoreCompileInputs.cache
+D:\HK1 2022-2023\CS511\BTTH\BTTH3\BTTH3\obj\Debug\BTTH3.exe
+D:\HK1 2022-2023\CS511\BTTH\BTTH3\BTTH3\obj\Debug\BTTH3.pdb
+C:\Users\LENOVO\Desktop\BTTH3\BTTH3\bin\Debug\BTTH3.exe.config
+C:\Users\LENOVO\Desktop\BTTH3\BTTH3\bin\Debug\BTTH3.exe
+C:\Users\LENOVO\Desktop\BTTH3\BTTH3\bin\Debug\BTTH3.pdb
+C:\Users\LENOVO\Desktop\BTTH3\BTTH3\obj\Debug\BTTH3.csproj.AssemblyReference.cache
+C:\Users\LENOVO\Desktop\BTTH3\BTTH3\obj\Debug\BTTH3.csproj.SuggestedBindingRedirects.cache
+C:\Users\LENOVO\Desktop\BTTH3\BTTH3\obj\Debug\BTTH3.Form1.resources
+C:\Users\LENOVO\Desktop\BTTH3\BTTH3\obj\Debug\BTTH3.Properties.Resources.resources
+C:\Users\LENOVO\Desktop\BTTH3\BTTH3\obj\Debug\BTTH3.csproj.GenerateResource.cache
+C:\Users\LENOVO\Desktop\BTTH3\BTTH3\obj\Debug\BTTH3.csproj.CoreCompileInputs.cache
+C:\Users\LENOVO\Desktop\BTTH3\BTTH3\obj\Debug\BTTH3.csproj.CopyComplete
+C:\Users\LENOVO\Desktop\BTTH3\BTTH3\obj\Debug\BTTH3.exe
+C:\Users\LENOVO\Desktop\BTTH3\BTTH3\obj\Debug\BTTH3.pdb
+C:\Users\LENOVO\Desktop\BTTH3\BTTH3\obj\Debug\BTTH3.Form2.resources
+C:\Users\LENOVO\Desktop\BTTH3\BTTH3\obj\Debug\BTTH3.Form3.resources
+C:\Users\LENOVO\Desktop\BTTH3\BTTH3\bin\Debug\Bunifu.UI.WinForms.xml
+C:\Users\LENOVO\Desktop\BTTH3\BTTH3\bin\Debug\Bunifu.UI.WinForms.1.5.3.xml
+C:\Users\LENOVO\Desktop\BTTH3\BTTH3\bin\Debug\Microsoft.Win32.Registry.xml
+C:\Users\LENOVO\Desktop\BTTH3\BTTH3\bin\Debug\Microsoft.Win32.Registry.AccessControl.xml
+C:\Users\LENOVO\Desktop\BTTH3\BTTH3\bin\Debug\Microsoft.Win32.SystemEvents.xml
+C:\Users\LENOVO\Desktop\BTTH3\BTTH3\bin\Debug\Newtonsoft.Json.xml
+C:\Users\LENOVO\Desktop\BTTH3\BTTH3\bin\Debug\RestSharp.xml
+C:\Users\LENOVO\Desktop\BTTH3\BTTH3\bin\Debug\System.Buffers.xml
+C:\Users\LENOVO\Desktop\BTTH3\BTTH3\bin\Debug\System.CodeDom.xml
+C:\Users\LENOVO\Desktop\BTTH3\BTTH3\bin\Debug\System.Configuration.ConfigurationManager.xml
+C:\Users\LENOVO\Desktop\BTTH3\BTTH3\bin\Debug\System.Data.Odbc.xml
+C:\Users\LENOVO\Desktop\BTTH3\BTTH3\bin\Debug\System.Data.OleDb.xml
+C:\Users\LENOVO\Desktop\BTTH3\BTTH3\bin\Debug\System.Data.SqlClient.xml
+C:\Users\LENOVO\Desktop\BTTH3\BTTH3\bin\Debug\System.Diagnostics.EventLog.xml
+C:\Users\LENOVO\Desktop\BTTH3\BTTH3\bin\Debug\System.Diagnostics.PerformanceCounter.xml
+C:\Users\LENOVO\Desktop\BTTH3\BTTH3\bin\Debug\System.Drawing.Common.xml
+C:\Users\LENOVO\Desktop\BTTH3\BTTH3\bin\Debug\System.IO.FileSystem.AccessControl.xml
+C:\Users\LENOVO\Desktop\BTTH3\BTTH3\bin\Debug\System.IO.Packaging.xml
+C:\Users\LENOVO\Desktop\BTTH3\BTTH3\bin\Debug\System.IO.Ports.xml
+C:\Users\LENOVO\Desktop\BTTH3\BTTH3\bin\Debug\System.Memory.xml
+C:\Users\LENOVO\Desktop\BTTH3\BTTH3\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\LENOVO\Desktop\BTTH3\BTTH3\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\LENOVO\Desktop\BTTH3\BTTH3\bin\Debug\System.Security.AccessControl.xml
+C:\Users\LENOVO\Desktop\BTTH3\BTTH3\bin\Debug\System.Security.Cryptography.Cng.xml
+C:\Users\LENOVO\Desktop\BTTH3\BTTH3\bin\Debug\System.Security.Cryptography.Pkcs.xml
+C:\Users\LENOVO\Desktop\BTTH3\BTTH3\bin\Debug\System.Security.Cryptography.ProtectedData.xml
+C:\Users\LENOVO\Desktop\BTTH3\BTTH3\bin\Debug\System.Security.Cryptography.Xml.xml
+C:\Users\LENOVO\Desktop\BTTH3\BTTH3\bin\Debug\System.Security.Permissions.xml
+C:\Users\LENOVO\Desktop\BTTH3\BTTH3\bin\Debug\System.Security.Principal.Windows.xml
+C:\Users\LENOVO\Desktop\BTTH3\BTTH3\bin\Debug\System.ServiceModel.Syndication.xml
+C:\Users\LENOVO\Desktop\BTTH3\BTTH3\bin\Debug\System.ServiceProcess.ServiceController.xml
+C:\Users\LENOVO\Desktop\BTTH3\BTTH3\bin\Debug\System.Text.Encoding.CodePages.xml
+C:\Users\LENOVO\Desktop\BTTH3\BTTH3\bin\Debug\System.Threading.AccessControl.xml
+C:\Users\LENOVO\Desktop\BTTH3\BTTH3\obj\Debug\BTTH3.songItem.resources
+C:\Users\LENOVO\Desktop\BTTH3\BTTH3\obj\Debug\BTTH3.csproj.Fody.CopyLocal.cache
+C:\Users\LENOVO\Desktop\BTTH3\BTTH3\obj\Debug\BTTH3.exe.licenses
