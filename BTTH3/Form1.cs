@@ -28,6 +28,8 @@ namespace BTTH3
             private static List<string> star = new List<string>();
             private static List<string> type = new List<string>();
             private static List<string> title = new List<string>();
+            private static List<string> love = new List<string>();
+            private static List<string> playList = new List<string>();
 
             public static List<string> Name { get => name; set => name = value; }
             public static List<string> Author { get => author; set => author = value; }
@@ -35,6 +37,8 @@ namespace BTTH3
             public static List<string> Star { get => star; set => star = value; }
             public static List<string> Type { get => type; set => type = value; }
             public static List<string> Title { get => title; set => title = value; }
+            public static List<string> Love { get => love; set => love = value; }
+            public static List<string> PlayList { get => playList; set => playList = value; }
         }
 
 
@@ -43,15 +47,18 @@ namespace BTTH3
             timer1.Start();
         }
 
-        private void picClose_Click(object sender, EventArgs e)
-        {
-            Environment.Exit(0);
-        }
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
             Form3 form3= new Form3();
             form3.Show();
+        }
+
+
+        private void btnClose_Click_1(object sender, EventArgs e)
+        {
+            Environment.Exit(0);
+
         }
 
         private void timer1_Tick(object sender, EventArgs e)

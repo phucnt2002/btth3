@@ -41,6 +41,8 @@
             this.pb_str1 = new System.Windows.Forms.PictureBox();
             this.picLove = new System.Windows.Forms.PictureBox();
             this.picAdd = new System.Windows.Forms.PictureBox();
+            this.labType = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.ptr_Item)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_str5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_str4)).BeginInit();
@@ -67,7 +69,7 @@
             this.labName.AutoSize = true;
             this.labName.BackColor = System.Drawing.Color.Transparent;
             this.labName.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labName.Location = new System.Drawing.Point(312, 31);
+            this.labName.Location = new System.Drawing.Point(319, 31);
             this.labName.Name = "labName";
             this.labName.Size = new System.Drawing.Size(71, 29);
             this.labName.TabIndex = 2;
@@ -78,7 +80,7 @@
             this.lab_author.AutoSize = true;
             this.lab_author.BackColor = System.Drawing.Color.Transparent;
             this.lab_author.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lab_author.Location = new System.Drawing.Point(312, 72);
+            this.lab_author.Location = new System.Drawing.Point(319, 72);
             this.lab_author.Name = "lab_author";
             this.lab_author.Size = new System.Drawing.Size(143, 29);
             this.lab_author.TabIndex = 4;
@@ -109,7 +111,7 @@
             // 
             this.pb_str5.BackColor = System.Drawing.Color.Transparent;
             this.pb_str5.Image = ((System.Drawing.Image)(resources.GetObject("pb_str5.Image")));
-            this.pb_str5.Location = new System.Drawing.Point(447, 142);
+            this.pb_str5.Location = new System.Drawing.Point(447, 159);
             this.pb_str5.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pb_str5.Name = "pb_str5";
             this.pb_str5.Size = new System.Drawing.Size(30, 30);
@@ -121,7 +123,7 @@
             // 
             this.pb_str4.BackColor = System.Drawing.Color.Transparent;
             this.pb_str4.Image = ((System.Drawing.Image)(resources.GetObject("pb_str4.Image")));
-            this.pb_str4.Location = new System.Drawing.Point(389, 142);
+            this.pb_str4.Location = new System.Drawing.Point(389, 159);
             this.pb_str4.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pb_str4.Name = "pb_str4";
             this.pb_str4.Size = new System.Drawing.Size(30, 30);
@@ -133,7 +135,7 @@
             // 
             this.pb_str3.BackColor = System.Drawing.Color.Transparent;
             this.pb_str3.Image = ((System.Drawing.Image)(resources.GetObject("pb_str3.Image")));
-            this.pb_str3.Location = new System.Drawing.Point(335, 142);
+            this.pb_str3.Location = new System.Drawing.Point(335, 159);
             this.pb_str3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pb_str3.Name = "pb_str3";
             this.pb_str3.Size = new System.Drawing.Size(30, 30);
@@ -145,7 +147,7 @@
             // 
             this.pb_str2.BackColor = System.Drawing.Color.Transparent;
             this.pb_str2.Image = ((System.Drawing.Image)(resources.GetObject("pb_str2.Image")));
-            this.pb_str2.Location = new System.Drawing.Point(280, 142);
+            this.pb_str2.Location = new System.Drawing.Point(280, 159);
             this.pb_str2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pb_str2.Name = "pb_str2";
             this.pb_str2.Size = new System.Drawing.Size(30, 30);
@@ -157,7 +159,7 @@
             // 
             this.pb_str1.BackColor = System.Drawing.Color.Transparent;
             this.pb_str1.Image = ((System.Drawing.Image)(resources.GetObject("pb_str1.Image")));
-            this.pb_str1.Location = new System.Drawing.Point(225, 142);
+            this.pb_str1.Location = new System.Drawing.Point(225, 159);
             this.pb_str1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pb_str1.Name = "pb_str1";
             this.pb_str1.Size = new System.Drawing.Size(30, 30);
@@ -169,26 +171,52 @@
             // 
             this.picLove.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("picLove.BackgroundImage")));
             this.picLove.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.picLove.Location = new System.Drawing.Point(422, 211);
+            this.picLove.Location = new System.Drawing.Point(444, 225);
             this.picLove.Name = "picLove";
             this.picLove.Size = new System.Drawing.Size(40, 40);
             this.picLove.TabIndex = 18;
             this.picLove.TabStop = false;
+            this.picLove.Click += new System.EventHandler(this.picLove_Click);
             // 
             // picAdd
             // 
             this.picAdd.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("picAdd.BackgroundImage")));
             this.picAdd.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.picAdd.Location = new System.Drawing.Point(482, 211);
+            this.picAdd.Location = new System.Drawing.Point(504, 225);
             this.picAdd.Name = "picAdd";
             this.picAdd.Size = new System.Drawing.Size(40, 40);
             this.picAdd.TabIndex = 19;
             this.picAdd.TabStop = false;
+            this.picAdd.Click += new System.EventHandler(this.picAdd_Click);
+            // 
+            // labType
+            // 
+            this.labType.AutoSize = true;
+            this.labType.BackColor = System.Drawing.Color.Transparent;
+            this.labType.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labType.Location = new System.Drawing.Point(319, 112);
+            this.labType.Name = "labType";
+            this.labType.Size = new System.Drawing.Size(76, 29);
+            this.labType.TabIndex = 21;
+            this.labType.Text = "Remix";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(228, 112);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(99, 29);
+            this.label3.TabIndex = 20;
+            this.label3.Text = "Thể loại:";
             // 
             // songItem
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.labType);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.picAdd);
             this.Controls.Add(this.picLove);
             this.Controls.Add(this.pb_str5);
@@ -202,7 +230,7 @@
             this.Controls.Add(this.labName);
             this.Controls.Add(this.lab);
             this.Name = "songItem";
-            this.Size = new System.Drawing.Size(558, 291);
+            this.Size = new System.Drawing.Size(576, 291);
             ((System.ComponentModel.ISupportInitialize)(this.ptr_Item)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_str5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_str4)).EndInit();
@@ -229,5 +257,7 @@
         private System.Windows.Forms.PictureBox pb_str1;
         private System.Windows.Forms.PictureBox picLove;
         private System.Windows.Forms.PictureBox picAdd;
+        private System.Windows.Forms.Label labType;
+        private System.Windows.Forms.Label label3;
     }
 }

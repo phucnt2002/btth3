@@ -38,6 +38,18 @@ namespace BTTH3
             } 
         }
 
+        public string ItemType
+        {
+            get
+            {
+                return labType.Text;
+            }
+            set
+            {
+                labType.Text = value;
+            }
+        }
+
         public string ItemAuthor
         {
             get
@@ -50,5 +62,44 @@ namespace BTTH3
             }
         }
 
+        public string ItemLove
+        {
+            get
+            {
+                return picLove.Text;
+            }
+            set
+            {
+                if(value == "true")
+                {
+                    picLove.BackgroundImage = Image.FromFile(@"..//..//img/icon/redheart.png");
+                }
+            }
+        }
+
+        private void picAdd_Click(object sender, EventArgs e)
+        {
+        }
+
+        private void picLove_Click(object sender, EventArgs e)
+        {
+            for(int i = 0; i < Form1.songs.Name.Count; i++)
+            {
+                if (Form1.songs.Name[i] == ItemName)
+                {
+                    if(Form1.songs.Love[i] != "false")
+                    {
+                        picLove.BackgroundImage = Image.FromFile(@"..//..//img/icon/heart (1).png");
+                        Form1.songs.Love[i] = "false";
+                    }
+                    else
+                    {
+                        picLove.BackgroundImage = Image.FromFile(@"..//..//img/icon/redheart.png");
+                        Form1.songs.Love[i] = "true";
+                    }
+                }
+            }
+
+        }
     }
 }

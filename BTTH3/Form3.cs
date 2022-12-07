@@ -21,7 +21,13 @@ namespace BTTH3
             InitializeComponent();
             loadData();
         }
-
+        public static class listFavorite
+        {
+            private static List<string> name = new List<string>();
+            private static List<string> type = new List<string>();
+            public static List<string> Name { get => name; set => name = value; }
+            public static List<string> Type { get => type; set => type = value; }
+        }
         public void loadData()
         {
             var xml = new XmlDocument();
@@ -42,6 +48,7 @@ namespace BTTH3
                     Form1.songs.Id.Add(nodeList[i].SelectSingleNode("id").InnerText.Trim());
                     Form1.songs.Star.Add(nodeList[i].SelectSingleNode("star").InnerText.Trim());
                     Form1.songs.Title.Add(nodeList[i].SelectSingleNode("title").InnerText.Trim());
+                    Form1.songs.Love.Add("false");
                     Form1.songs.Type.Add(type[k]);
                 }
             }
@@ -124,8 +131,29 @@ namespace BTTH3
                         //MessageBox.Show("..//..//img" + "/" + Form1.songs.Type[i] + "/" + Form1.songs.Id[i] + ".png");
                         x.ItemImage = Image.FromFile(@"..//..//img" + "/" + Form1.songs.Type[i] + "/" + Form1.songs.Id[i] + ".png");
                         x.ItemAuthor = Form1.songs.Author[i];
+                        x.ItemType = Form1.songs.Type[i];
+                        x.ItemLove = Form1.songs.Love[i];
                         flowLayoutPanel1.Controls.Add(x);
                     }
+                }
+            }
+        }
+
+        private void loadFavorite()
+        {
+           flowLayoutPanel1.Controls.Clear();
+           for(int i = 0; i< Form1.songs.Name.Count; i++)
+            {
+                if (Form1.songs.Love[i] == "true")
+                {
+                    songItem x = new songItem();
+                    x.ItemName = Form1.songs.Name[i];
+                    //MessageBox.Show("..//..//img" + "/" + Form1.songs.Type[i] + "/" + Form1.songs.Id[i] + ".png");
+                    x.ItemImage = Image.FromFile(@"..//..//img" + "/" + Form1.songs.Type[i] + "/" + Form1.songs.Id[i] + ".png");
+                    x.ItemAuthor = Form1.songs.Author[i];
+                    x.ItemType = Form1.songs.Type[i];
+                    x.ItemLove = Form1.songs.Love[i];
+                    flowLayoutPanel1.Controls.Add(x);
                 }
             }
         }
@@ -240,6 +268,16 @@ namespace BTTH3
         private void button5_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            loadFavorite();
+        }
+
+        private void btnClose_Click(object sender, EventArgs e)
+        {
+            Environment.Exit(0);
         }
     }
 }
