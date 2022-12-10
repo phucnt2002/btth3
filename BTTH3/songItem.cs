@@ -21,7 +21,7 @@ namespace BTTH3
         {
             get
             {
-                return ptr_Item.Image;
+                return ptr_Item.BackgroundImage;
             }
             set
             {
@@ -62,6 +62,9 @@ namespace BTTH3
             }
         }
 
+        public string ItemLyric;
+
+
         public string ItemLove
         {
             get
@@ -100,6 +103,12 @@ namespace BTTH3
                 }
             }
 
+        }
+
+        private void ptr_Item_Click(object sender, EventArgs e)
+        {
+            Form4 page = new Form4(ItemName, ItemAuthor, ItemType, ItemImage, ItemLyric);
+            page.Show();
         }
     }
 }

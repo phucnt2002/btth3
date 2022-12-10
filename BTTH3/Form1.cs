@@ -45,6 +45,14 @@ namespace BTTH3
         private void Form1_Load(object sender, EventArgs e)
         {
             timer1.Start();
+
+
+            //string b="";
+            //for(int i =0; i < list.Count; i++)
+            //{
+            //    b = b+list[i].ToString()+" ";
+            //}
+            //MessageBox.Show(b);
         }
 
 

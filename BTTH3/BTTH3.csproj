@@ -51,6 +51,7 @@
     <Reference Include="DotNetSkin.SkinControls">
       <HintPath>D:\HK1 2022-2023\CS511\BTTH\BTTH1\DotNetSkin.SkinControls.dll</HintPath>
     </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
     <Reference Include="Microsoft.Win32.Registry, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.Win32.Registry.5.0.0\lib\net461\Microsoft.Win32.Registry.dll</HintPath>
     </Reference>
@@ -241,6 +242,24 @@
     <Compile Include="Form3.Designer.cs">
       <DependentUpon>Form3.cs</DependentUpon>
     </Compile>
+    <Compile Include="Form4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form4.Designer.cs">
+      <DependentUpon>Form4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormPlayList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPlayList.Designer.cs">
+      <DependentUpon>FormPlayList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="playlist.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="playlist.Designer.cs">
+      <DependentUpon>playlist.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RotateImage.cs" />
@@ -258,6 +277,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form3.resx">
       <DependentUpon>Form3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form4.resx">
+      <DependentUpon>Form4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPlayList.resx">
+      <DependentUpon>FormPlayList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="playlist.resx">
+      <DependentUpon>playlist.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -297,11 +325,16 @@
     <Content Include="img\acoustic\7.png" />
     <Content Include="img\acoustic\8.png" />
     <Content Include="img\acoustic\9.png" />
+    <Content Include="img\background\1.jpg" />
     <Content Include="img\background\1.png" />
     <Content Include="img\background\2.png" />
+    <Content Include="img\background\3.png" />
     <Content Include="img\icon\back.png" />
     <Content Include="img\icon\close.png" />
+    <Content Include="img\icon\favorite %281%29.png" />
     <Content Include="img\icon\favorite.png" />
+    <Content Include="img\icon\favorite2.png" />
+    <Content Include="img\icon\favorite3.png" />
     <Content Include="img\icon\guitar.png" />
     <Content Include="img\icon\heart %281%29.png" />
     <Content Include="img\icon\heart.png" />
@@ -321,6 +354,17 @@
     <Content Include="img\icon\random.png" />
     <Content Include="img\icon\redheart.png" />
     <Content Include="img\icon\remix.png" />
+    <Content Include="img\icon\search.png" />
+    <Content Include="img\rap\1.png" />
+    <Content Include="img\rap\10.png" />
+    <Content Include="img\rap\2.png" />
+    <Content Include="img\rap\3.png" />
+    <Content Include="img\rap\4.png" />
+    <Content Include="img\rap\5.png" />
+    <Content Include="img\rap\6.png" />
+    <Content Include="img\rap\7.png" />
+    <Content Include="img\rap\8.png" />
+    <Content Include="img\rap\9.png" />
     <Content Include="img\remix\1.png" />
     <Content Include="img\remix\10.png" />
     <Content Include="img\remix\2.png" />
@@ -341,16 +385,16 @@
     <Content Include="music\acoustic\7.mp3" />
     <Content Include="music\acoustic\8.mp3" />
     <Content Include="music\acoustic\9.mp3" />
-    <Content Include="music\lofi\1.mp3" />
-    <Content Include="music\lofi\10.mp3" />
-    <Content Include="music\lofi\2.mp3" />
-    <Content Include="music\lofi\3.mp3" />
-    <Content Include="music\lofi\4.mp3" />
-    <Content Include="music\lofi\5.mp3" />
-    <Content Include="music\lofi\6.mp3" />
-    <Content Include="music\lofi\7.mp3" />
-    <Content Include="music\lofi\8.mp3" />
-    <Content Include="music\lofi\9.mp3" />
+    <Content Include="music\rap\1.mp3" />
+    <Content Include="music\rap\10.mp3" />
+    <Content Include="music\rap\2.mp3" />
+    <Content Include="music\rap\3.mp3" />
+    <Content Include="music\rap\4.mp3" />
+    <Content Include="music\rap\5.mp3" />
+    <Content Include="music\rap\6.mp3" />
+    <Content Include="music\rap\7.mp3" />
+    <Content Include="music\rap\8.mp3" />
+    <Content Include="music\rap\9.mp3" />
     <Content Include="music\remix\1.mp3" />
     <Content Include="music\remix\10.mp3" />
     <Content Include="music\remix\2.mp3" />
@@ -362,6 +406,25 @@
     <Content Include="music\remix\8.mp3" />
     <Content Include="music\remix\9.mp3" />
     <Content Include="XML\music.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AxWMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="WMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\Fody.4.0.2\build\Fody.targets" Condition="Exists('..\packages\Fody.4.0.2\build\Fody.targets')" />

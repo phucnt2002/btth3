@@ -21,12 +21,32 @@ namespace BTTH3
             InitializeComponent();
             loadData();
         }
+
         public static class listFavorite
         {
             private static List<string> name = new List<string>();
             private static List<string> type = new List<string>();
             public static List<string> Name { get => name; set => name = value; }
             public static List<string> Type { get => type; set => type = value; }
+        }
+
+        private List<int> ranList(int sl)
+        {
+            Random rand = new Random();
+            List<int> list = new List<int>();
+            while (list.Count < sl)
+            {
+                int a = rand.Next(0, sl);
+                if (list.Contains(a))
+                {
+                    continue;
+                }
+                else
+                {
+                    list.Add(a);
+                }
+            }
+            return list;
         }
         public void loadData()
         {
@@ -78,9 +98,17 @@ namespace BTTH3
             }
         }
 
+        private bool menuOpen = true;
+        private bool homeOpen = false;
         private void menuBtn_Click(object sender, EventArgs e)
         {
             sidebarTimer.Start();
+            menuOpen = !menuOpen;
+            if (homeOpen)
+            {
+                Hometimer.Start();
+                homeOpen = !homeOpen;
+            }
         }
 
         private void Hometimer_Tick(object sender, EventArgs e)
@@ -107,7 +135,16 @@ namespace BTTH3
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Hometimer.Start();
+            if (menuOpen)
+            {
+                Hometimer.Start();
+                homeOpen = !homeOpen;
+            }
+            //if (menuOpen)
+            //{
+            //    sidebarTimer.Start();
+            //    menuOpen = !menuOpen;
+            //}
             //var type = new List<string>()
             //        {
             //            "remix",
@@ -120,19 +157,21 @@ namespace BTTH3
         private void loadSongs(List<string> type)
         {
             flowLayoutPanel1.Controls.Clear();
-            for (int i = 0; i < Form1.songs.Name.Count; i++)
+            List<int> rand = ranList(Form1.songs.Name.Count);
+            for (int i = 0; i < rand.Count; i++)
             {
                 for(int j = 0; j < type.Count; j++)
                 {
-                    if(type[j] == Form1.songs.Type[i])
+                    if(type[j] == Form1.songs.Type[rand[i]])
                     {
                         songItem x = new songItem();
-                        x.ItemName = Form1.songs.Name[i];
+                        x.ItemName = Form1.songs.Name[rand[i]];
                         //MessageBox.Show("..//..//img" + "/" + Form1.songs.Type[i] + "/" + Form1.songs.Id[i] + ".png");
-                        x.ItemImage = Image.FromFile(@"..//..//img" + "/" + Form1.songs.Type[i] + "/" + Form1.songs.Id[i] + ".png");
-                        x.ItemAuthor = Form1.songs.Author[i];
-                        x.ItemType = Form1.songs.Type[i];
-                        x.ItemLove = Form1.songs.Love[i];
+                        x.ItemImage = Image.FromFile(@"..//..//img" + "/" + Form1.songs.Type[rand[i]] + "/" + Form1.songs.Id[rand[i]] + ".png");
+                        x.ItemAuthor = Form1.songs.Author[rand[i]];
+                        x.ItemType = Form1.songs.Type[rand[i]];
+                        x.ItemLove = Form1.songs.Love[rand[i]];
+                        x.ItemLyric = Form1.songs.Title[rand[i]];
                         flowLayoutPanel1.Controls.Add(x);
                     }
                 }
@@ -153,6 +192,7 @@ namespace BTTH3
                     x.ItemAuthor = Form1.songs.Author[i];
                     x.ItemType = Form1.songs.Type[i];
                     x.ItemLove = Form1.songs.Love[i];
+                    x.ItemLyric = Form1.songs.Title[i];
                     flowLayoutPanel1.Controls.Add(x);
                 }
             }
@@ -173,6 +213,8 @@ namespace BTTH3
 
         private void button2_Click(object sender, EventArgs e)
         {
+            panHome.Visible = true;
+
             var type = new List<string>()
                     {
                         "remix",
@@ -205,6 +247,8 @@ namespace BTTH3
 
         private void button3_Click(object sender, EventArgs e)
         {
+            panHome.Visible = true;
+
             var type = new List<string>()
                     {
                         "acoustic",
@@ -237,6 +281,8 @@ namespace BTTH3
 
         private void button4_Click(object sender, EventArgs e)
         {
+            panHome.Visible = true;
+
             var type = new List<string>()
                     {
                         "rap",
@@ -267,7 +313,12 @@ namespace BTTH3
 
         private void button5_Click(object sender, EventArgs e)
         {
+            FormPlayList page = new FormPlayList() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true};
 
+            panHome.Visible = false;
+
+            this.panMenu.Controls.Add(page);
+            page.Show();
         }
 
         private void button6_Click(object sender, EventArgs e)
@@ -278,6 +329,26 @@ namespace BTTH3
         private void btnClose_Click(object sender, EventArgs e)
         {
             Environment.Exit(0);
+        }
+
+        private void bunifuTextBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void search_TextChanged(object sender, EventArgs e)
+        {
+            string txt = search.Text;
+            foreach (var item in flowLayoutPanel1.Controls)
+            {
+                var song = (songItem)item;
+                song.Visible = song.ItemName.ToLower().ToLower().Contains(txt.Trim().ToLower());
+                if (song.Visible == false)
+                {
+                    song.Visible = song.ItemAuthor.ToLower().ToLower().Contains(txt.Trim().ToLower());
+                }
+
+            }
         }
     }
 }

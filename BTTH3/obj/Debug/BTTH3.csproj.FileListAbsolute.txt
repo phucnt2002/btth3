@@ -59,3 +59,11 @@ C:\Users\LENOVO\Desktop\BTTH3\BTTH3\bin\Debug\System.Threading.AccessControl.xml
 C:\Users\LENOVO\Desktop\BTTH3\BTTH3\obj\Debug\BTTH3.songItem.resources
 C:\Users\LENOVO\Desktop\BTTH3\BTTH3\obj\Debug\BTTH3.csproj.Fody.CopyLocal.cache
 C:\Users\LENOVO\Desktop\BTTH3\BTTH3\obj\Debug\BTTH3.exe.licenses
+C:\Users\LENOVO\Desktop\BTTH3\BTTH3\obj\Debug\BTTH3.Form4.resources
+C:\Users\LENOVO\Desktop\BTTH3\BTTH3\obj\Debug\BTTH3.playlist.resources
+C:\Users\LENOVO\Desktop\BTTH3\BTTH3\obj\Debug\BTTH3.FormPlayList.resources
+C:\Users\LENOVO\Desktop\BTTH3\BTTH3\obj\Debug\Interop.WMPLib.dll
+C:\Users\LENOVO\Desktop\BTTH3\BTTH3\obj\Debug\AxInterop.WMPLib.dll
+C:\Users\LENOVO\Desktop\BTTH3\BTTH3\obj\Debug\BTTH3.csproj.ResolveComReference.cache
+C:\Users\LENOVO\Desktop\BTTH3\BTTH3\bin\Debug\Interop.WMPLib.dll
+C:\Users\LENOVO\Desktop\BTTH3\BTTH3\bin\Debug\AxInterop.WMPLib.dll

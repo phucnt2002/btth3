@@ -106,6 +106,7 @@
             this.ptr_Item.Size = new System.Drawing.Size(220, 220);
             this.ptr_Item.TabIndex = 5;
             this.ptr_Item.TabStop = false;
+            this.ptr_Item.Click += new System.EventHandler(this.ptr_Item_Click);
             // 
             // pb_str5
             // 
