@@ -362,7 +362,7 @@ namespace BTTH3
             panHome.Visible = false;
             foreach (Control item in panMenu.Controls.OfType<Control>().ToList())
             {
-                if (item.Name == "FormPlayList")
+                if (item.Name == "FormPlayList"|| item.Name == "FormHistory")
                     panMenu.Controls.Remove(item);
             }
             this.panMenu.Controls.Add(page);

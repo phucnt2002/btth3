@@ -32,6 +32,9 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form4));
             this.btnExit = new Bunifu.UI.WinForms.BunifuImageButton();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.lbl_core = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.txtLyric = new System.Windows.Forms.Label();
             this.wplayer = new AxWMPLib.AxWindowsMediaPlayer();
             this.bunifuImageButton1 = new Bunifu.UI.WinForms.BunifuImageButton();
             this.picLove = new System.Windows.Forms.PictureBox();
@@ -48,10 +51,8 @@
             this.label1 = new System.Windows.Forms.Label();
             this.picSong = new System.Windows.Forms.PictureBox();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.txtLyric = new System.Windows.Forms.Label();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.lbl_core = new System.Windows.Forms.Label();
             this.panel2.SuspendLayout();
+            this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.wplayer)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picLove)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_str5)).BeginInit();
@@ -60,7 +61,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pb_str2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_str1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picSong)).BeginInit();
-            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnExit
@@ -101,6 +101,7 @@
             // 
             // panel2
             // 
+            this.panel2.BackColor = System.Drawing.Color.Transparent;
             this.panel2.Controls.Add(this.lbl_core);
             this.panel2.Controls.Add(this.panel1);
             this.panel2.Controls.Add(this.wplayer);
@@ -123,6 +124,37 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1280, 720);
             this.panel2.TabIndex = 6;
+            // 
+            // lbl_core
+            // 
+            this.lbl_core.AutoSize = true;
+            this.lbl_core.BackColor = System.Drawing.Color.Transparent;
+            this.lbl_core.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_core.ForeColor = System.Drawing.Color.Red;
+            this.lbl_core.Location = new System.Drawing.Point(383, 524);
+            this.lbl_core.Name = "lbl_core";
+            this.lbl_core.Size = new System.Drawing.Size(25, 29);
+            this.lbl_core.TabIndex = 28;
+            this.lbl_core.Text = "0";
+            // 
+            // panel1
+            // 
+            this.panel1.AutoScroll = true;
+            this.panel1.Controls.Add(this.txtLyric);
+            this.panel1.Location = new System.Drawing.Point(551, 369);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(753, 217);
+            this.panel1.TabIndex = 28;
+            // 
+            // txtLyric
+            // 
+            this.txtLyric.AutoSize = true;
+            this.txtLyric.Font = new System.Drawing.Font("Calibri", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtLyric.Location = new System.Drawing.Point(3, 0);
+            this.txtLyric.Name = "txtLyric";
+            this.txtLyric.Size = new System.Drawing.Size(69, 24);
+            this.txtLyric.TabIndex = 27;
+            this.txtLyric.Text = "txtLyric";
             // 
             // wplayer
             // 
@@ -321,44 +353,16 @@
             this.timer1.Interval = 50;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
-            // txtLyric
-            // 
-            this.txtLyric.AutoSize = true;
-            this.txtLyric.Font = new System.Drawing.Font("Calibri", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtLyric.Location = new System.Drawing.Point(3, 0);
-            this.txtLyric.Name = "txtLyric";
-            this.txtLyric.Size = new System.Drawing.Size(69, 24);
-            this.txtLyric.TabIndex = 27;
-            this.txtLyric.Text = "txtLyric";
-            // 
-            // panel1
-            // 
-            this.panel1.AutoScroll = true;
-            this.panel1.Controls.Add(this.txtLyric);
-            this.panel1.Location = new System.Drawing.Point(551, 369);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(753, 217);
-            this.panel1.TabIndex = 28;
-            // 
-            // lbl_core
-            // 
-            this.lbl_core.AutoSize = true;
-            this.lbl_core.BackColor = System.Drawing.Color.Transparent;
-            this.lbl_core.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_core.ForeColor = System.Drawing.Color.Red;
-            this.lbl_core.Location = new System.Drawing.Point(383, 524);
-            this.lbl_core.Name = "lbl_core";
-            this.lbl_core.Size = new System.Drawing.Size(25, 29);
-            this.lbl_core.TabIndex = 28;
-            this.lbl_core.Text = "0";
-            // 
             // Form4
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1280, 720);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.btnExit);
+            this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Form4";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -366,6 +370,8 @@
             this.Load += new System.EventHandler(this.Form4_Load);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.wplayer)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picLove)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_str5)).EndInit();
@@ -374,8 +380,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pb_str2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_str1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picSong)).EndInit();
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
             this.ResumeLayout(false);
 
         }

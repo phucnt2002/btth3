@@ -37,7 +37,6 @@ namespace BTTH3
         {
             try
             {
-                MessageBox.Show(Form3.songsPlayList.Name[0]);
                 flowLayoutPanel1.Visible = true;
             }
             catch

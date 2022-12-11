@@ -58,7 +58,9 @@ namespace BTTH3
 
         }
 
-        private void picPlaylist_Click(object sender, EventArgs e)
+
+
+        private void picPlaylist_Click_1(object sender, EventArgs e)
         {
             FormPLItem page = new FormPLItem(NamePlayList);
             page.Text = "PlayList " + NamePlayList;

@@ -33,10 +33,20 @@ namespace BTTH3
 
         private void bunifuButton21_Click(object sender, EventArgs e)
         {
+
             int rowIdex = dgv.CurrentCell.RowIndex;
             string name = dgv.Rows[rowIdex].Cells[0].Value.ToString();
-            Form3.songsPlayList.Name.Add(name);
-            Form3.songsPlayList.PlayList.Add(namePlayList);
+            int index = Form3.songsPlayList.Name.IndexOf(name);
+            if(index == -1|| Form3.songsPlayList.PlayList[index]!= namePlayList)
+            {
+                Form3.songsPlayList.Name.Add(name);
+                Form3.songsPlayList.PlayList.Add(namePlayList);
+            }
+            else
+            {
+                MessageBox.Show("Bài hát đã tồn tại trong PlayList " + namePlayList);
+            }
+
         }
     }
 }

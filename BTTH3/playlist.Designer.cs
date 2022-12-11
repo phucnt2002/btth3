@@ -29,22 +29,11 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(playlist));
-            this.picPlaylist = new System.Windows.Forms.PictureBox();
             this.labName = new System.Windows.Forms.Label();
             this.bunifuImageButton1 = new Bunifu.UI.WinForms.BunifuImageButton();
+            this.picPlaylist = new Bunifu.UI.WinForms.BunifuPictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.picPlaylist)).BeginInit();
             this.SuspendLayout();
-            // 
-            // picPlaylist
-            // 
-            this.picPlaylist.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("picPlaylist.BackgroundImage")));
-            this.picPlaylist.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.picPlaylist.Location = new System.Drawing.Point(3, 3);
-            this.picPlaylist.Name = "picPlaylist";
-            this.picPlaylist.Size = new System.Drawing.Size(332, 258);
-            this.picPlaylist.TabIndex = 0;
-            this.picPlaylist.TabStop = false;
-            this.picPlaylist.Click += new System.EventHandler(this.picPlaylist_Click);
             // 
             // labName
             // 
@@ -92,15 +81,32 @@
             this.bunifuImageButton1.ZoomSpeed = 10;
             this.bunifuImageButton1.Click += new System.EventHandler(this.bunifuImageButton1_Click);
             // 
+            // picPlaylist
+            // 
+            this.picPlaylist.AllowFocused = false;
+            this.picPlaylist.AutoSizeHeight = true;
+            this.picPlaylist.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.picPlaylist.BorderRadius = 50;
+            this.picPlaylist.Image = ((System.Drawing.Image)(resources.GetObject("picPlaylist.Image")));
+            this.picPlaylist.IsCircle = false;
+            this.picPlaylist.Location = new System.Drawing.Point(47, 17);
+            this.picPlaylist.Name = "picPlaylist";
+            this.picPlaylist.Size = new System.Drawing.Size(245, 245);
+            this.picPlaylist.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picPlaylist.TabIndex = 5;
+            this.picPlaylist.TabStop = false;
+            this.picPlaylist.Type = Bunifu.UI.WinForms.BunifuPictureBox.Types.Square;
+            this.picPlaylist.Click += new System.EventHandler(this.picPlaylist_Click_1);
+            // 
             // playlist
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Controls.Add(this.picPlaylist);
             this.Controls.Add(this.bunifuImageButton1);
             this.Controls.Add(this.labName);
-            this.Controls.Add(this.picPlaylist);
             this.DoubleBuffered = true;
             this.ForeColor = System.Drawing.Color.White;
             this.Name = "playlist";
@@ -113,9 +119,8 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.PictureBox picPlaylist;
         private System.Windows.Forms.Label labName;
         private Bunifu.UI.WinForms.BunifuImageButton bunifuImageButton1;
+        private Bunifu.UI.WinForms.BunifuPictureBox picPlaylist;
     }
 }

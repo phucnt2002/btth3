@@ -327,6 +327,8 @@
             // 
             // panHome
             // 
+            this.panHome.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(184)))), ((int)(((byte)(93)))), ((int)(((byte)(231)))));
+            this.panHome.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panHome.Controls.Add(this.search);
             this.panHome.Controls.Add(this.flowLayoutPanel1);
             this.panHome.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -415,7 +417,7 @@
             // flowLayoutPanel1
             // 
             this.flowLayoutPanel1.AutoScroll = true;
-            this.flowLayoutPanel1.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.flowLayoutPanel1.BackColor = System.Drawing.Color.Transparent;
             this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 59);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
