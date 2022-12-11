@@ -12,9 +12,31 @@ namespace BTTH3
 {
     public partial class Form2 : Form
     {
-        public Form2()
+        string namePlayList;
+        public Form2(string namePlayList_)
         {
             InitializeComponent();
+            namePlayList = namePlayList_;
+        }
+
+        private void Form2_Load(object sender, EventArgs e)
+        {
+            for(int i = 0; i< Form1.songs.Name.Count; i++)
+            {
+                dgv.Rows.Add();
+                dgv.Rows[i].Cells[0].Value = Form1.songs.Name[i];
+                dgv.Rows[i].Cells[1].Value = Form1.songs.Author[i];
+                dgv.Rows[i].Cells[2].Value = Form1.songs.Type[i];
+            }
+        }
+
+
+        private void bunifuButton21_Click(object sender, EventArgs e)
+        {
+            int rowIdex = dgv.CurrentCell.RowIndex;
+            string name = dgv.Rows[rowIdex].Cells[0].Value.ToString();
+            Form3.songsPlayList.Name.Add(name);
+            Form3.songsPlayList.PlayList.Add(namePlayList);
         }
     }
 }

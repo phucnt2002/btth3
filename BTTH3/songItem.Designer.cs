@@ -43,6 +43,7 @@
             this.picAdd = new System.Windows.Forms.PictureBox();
             this.labType = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
+            this.lbl_core = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.ptr_Item)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_str5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_str4)).BeginInit();
@@ -212,10 +213,20 @@
             this.label3.TabIndex = 20;
             this.label3.Text = "Thể loại:";
             // 
+            // lbl_core
+            // 
+            this.lbl_core.AutoSize = true;
+            this.lbl_core.Location = new System.Drawing.Point(504, 168);
+            this.lbl_core.Name = "lbl_core";
+            this.lbl_core.Size = new System.Drawing.Size(51, 20);
+            this.lbl_core.TabIndex = 22;
+            this.lbl_core.Text = "label1";
+            // 
             // songItem
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.lbl_core);
             this.Controls.Add(this.labType);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.picAdd);
@@ -232,6 +243,7 @@
             this.Controls.Add(this.lab);
             this.Name = "songItem";
             this.Size = new System.Drawing.Size(576, 291);
+            this.Load += new System.EventHandler(this.songItem_Load);
             ((System.ComponentModel.ISupportInitialize)(this.ptr_Item)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_str5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_str4)).EndInit();
@@ -260,5 +272,6 @@
         private System.Windows.Forms.PictureBox picAdd;
         private System.Windows.Forms.Label labType;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label lbl_core;
     }
 }

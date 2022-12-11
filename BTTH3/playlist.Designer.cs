@@ -44,6 +44,7 @@
             this.picPlaylist.Size = new System.Drawing.Size(332, 258);
             this.picPlaylist.TabIndex = 0;
             this.picPlaylist.TabStop = false;
+            this.picPlaylist.Click += new System.EventHandler(this.picPlaylist_Click);
             // 
             // labName
             // 
@@ -95,10 +96,13 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(42)))), ((int)(((byte)(231)))));
+            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Controls.Add(this.bunifuImageButton1);
             this.Controls.Add(this.labName);
             this.Controls.Add(this.picPlaylist);
+            this.DoubleBuffered = true;
+            this.ForeColor = System.Drawing.Color.White;
             this.Name = "playlist";
             this.Size = new System.Drawing.Size(338, 333);
             this.Load += new System.EventHandler(this.playlist_Load);

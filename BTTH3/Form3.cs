@@ -22,6 +22,15 @@ namespace BTTH3
             loadData();
         }
 
+        public static class songsPlayList
+        {
+            private static List<string> name = new List<string>();
+            private static List<string> playList = new List<string>();
+
+            public static List<string> Name { get => name; set => name = value; }
+            public static List<string> PlayList { get => playList; set => playList = value; }
+        }
+
         public static class listFavorite
         {
             private static List<string> name = new List<string>();
@@ -140,18 +149,7 @@ namespace BTTH3
                 Hometimer.Start();
                 homeOpen = !homeOpen;
             }
-            //if (menuOpen)
-            //{
-            //    sidebarTimer.Start();
-            //    menuOpen = !menuOpen;
-            //}
-            //var type = new List<string>()
-            //        {
-            //            "remix",
-            //            "acoustic",
-            //            "rap",
-            //        };
-            //loadSongs(type);
+
         }
         
         private void loadSongs(List<string> type)
@@ -167,9 +165,10 @@ namespace BTTH3
                         songItem x = new songItem();
                         x.ItemName = Form1.songs.Name[rand[i]];
                         //MessageBox.Show("..//..//img" + "/" + Form1.songs.Type[i] + "/" + Form1.songs.Id[i] + ".png");
-                        x.ItemImage = Image.FromFile(@"..//..//img" + "/" + Form1.songs.Type[rand[i]] + "/" + Form1.songs.Id[rand[i]] + ".png");
-                        x.ItemAuthor = Form1.songs.Author[rand[i]];
+                        //x.ItemImage = Image.FromFile(@"..//..//img" + "/" + Form1.songs.Type[rand[i]] + "/" + Form1.songs.Id[rand[i]] + ".png");
                         x.ItemType = Form1.songs.Type[rand[i]];
+                        x.ItemImage = Form1.songs.Id[rand[i]];
+                        x.ItemAuthor = Form1.songs.Author[rand[i]];
                         x.ItemLove = Form1.songs.Love[rand[i]];
                         x.ItemLyric = Form1.songs.Title[rand[i]];
                         flowLayoutPanel1.Controls.Add(x);
@@ -188,11 +187,12 @@ namespace BTTH3
                     songItem x = new songItem();
                     x.ItemName = Form1.songs.Name[i];
                     //MessageBox.Show("..//..//img" + "/" + Form1.songs.Type[i] + "/" + Form1.songs.Id[i] + ".png");
-                    x.ItemImage = Image.FromFile(@"..//..//img" + "/" + Form1.songs.Type[i] + "/" + Form1.songs.Id[i] + ".png");
-                    x.ItemAuthor = Form1.songs.Author[i];
                     x.ItemType = Form1.songs.Type[i];
+                    x.ItemImage = Form1.songs.Id[i];
+                    x.ItemAuthor = Form1.songs.Author[i];
                     x.ItemLove = Form1.songs.Love[i];
                     x.ItemLyric = Form1.songs.Title[i];
+                    //MessageBox.Show(Form1.songs.Id[i], Form1.songs.Type[i]);
                     flowLayoutPanel1.Controls.Add(x);
                 }
             }
@@ -281,13 +281,14 @@ namespace BTTH3
 
         private void button4_Click(object sender, EventArgs e)
         {
-            panHome.Visible = true;
 
             var type = new List<string>()
                     {
                         "rap",
                     };
             loadSongs(type);
+            panHome.Visible = true;
+
 
             //if (flatRap)
             //{
@@ -314,15 +315,19 @@ namespace BTTH3
         private void button5_Click(object sender, EventArgs e)
         {
             FormPlayList page = new FormPlayList() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true};
-
+            foreach (Control item in panMenu.Controls.OfType<Control>().ToList())
+            {
+                if (item.Name == "FormHistory")
+                    panMenu.Controls.Remove(item);
+            }
             panHome.Visible = false;
-
             this.panMenu.Controls.Add(page);
             page.Show();
         }
 
         private void button6_Click(object sender, EventArgs e)
         {
+            panHome.Visible = true;
             loadFavorite();
         }
 
@@ -349,6 +354,19 @@ namespace BTTH3
                 }
 
             }
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            FormHistory page = new FormHistory() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+            panHome.Visible = false;
+            foreach (Control item in panMenu.Controls.OfType<Control>().ToList())
+            {
+                if (item.Name == "FormPlayList")
+                    panMenu.Controls.Remove(item);
+            }
+            this.panMenu.Controls.Add(page);
+            page.Show();
         }
     }
 }

@@ -67,3 +67,5 @@ C:\Users\LENOVO\Desktop\BTTH3\BTTH3\obj\Debug\AxInterop.WMPLib.dll
 C:\Users\LENOVO\Desktop\BTTH3\BTTH3\obj\Debug\BTTH3.csproj.ResolveComReference.cache
 C:\Users\LENOVO\Desktop\BTTH3\BTTH3\bin\Debug\Interop.WMPLib.dll
 C:\Users\LENOVO\Desktop\BTTH3\BTTH3\bin\Debug\AxInterop.WMPLib.dll
+C:\Users\LENOVO\Desktop\BTTH3\BTTH3\obj\Debug\BTTH3.FormPLItem.resources
+C:\Users\LENOVO\Desktop\BTTH3\BTTH3\obj\Debug\BTTH3.FormHistory.resources

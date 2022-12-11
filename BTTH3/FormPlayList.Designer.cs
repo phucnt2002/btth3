@@ -85,6 +85,7 @@
             // flowLayoutPanel1
             // 
             this.flowLayoutPanel1.AutoScroll = true;
+            this.flowLayoutPanel1.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 61);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
@@ -112,6 +113,7 @@
             this.Name = "FormPlayList";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormPlayList";
+            this.Load += new System.EventHandler(this.FormPlayList_Load);
             this.panContain.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);

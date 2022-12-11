@@ -248,11 +248,23 @@
     <Compile Include="Form4.Designer.cs">
       <DependentUpon>Form4.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormHistory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormHistory.Designer.cs">
+      <DependentUpon>FormHistory.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormPlayList.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FormPlayList.Designer.cs">
       <DependentUpon>FormPlayList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormPLItem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPLItem.Designer.cs">
+      <DependentUpon>FormPLItem.cs</DependentUpon>
     </Compile>
     <Compile Include="playlist.cs">
       <SubType>UserControl</SubType>
@@ -281,8 +293,14 @@
     <EmbeddedResource Include="Form4.resx">
       <DependentUpon>Form4.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormHistory.resx">
+      <DependentUpon>FormHistory.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormPlayList.resx">
       <DependentUpon>FormPlayList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPLItem.resx">
+      <DependentUpon>FormPLItem.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="playlist.resx">
       <DependentUpon>playlist.cs</DependentUpon>
@@ -296,6 +314,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="songItem.resx">
       <DependentUpon>songItem.cs</DependentUpon>
@@ -355,6 +374,8 @@
     <Content Include="img\icon\redheart.png" />
     <Content Include="img\icon\remix.png" />
     <Content Include="img\icon\search.png" />
+    <None Include="img\icon\white_star.png" />
+    <None Include="img\icon\yellow_star.png" />
     <Content Include="img\rap\1.png" />
     <Content Include="img\rap\10.png" />
     <Content Include="img\rap\2.png" />
@@ -405,6 +426,7 @@
     <Content Include="music\remix\7.mp3" />
     <Content Include="music\remix\8.mp3" />
     <Content Include="music\remix\9.mp3" />
+    <Content Include="XML\history.xml" />
     <Content Include="XML\music.xml" />
   </ItemGroup>
   <ItemGroup>

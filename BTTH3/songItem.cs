@@ -17,15 +17,75 @@ namespace BTTH3
             InitializeComponent();
         }
 
-        public Image ItemImage
+        public void loadFeeadback(int star)
+        {
+            switch (star)
+            {
+                case 1:
+                    pb_str2.Image = Image.FromFile(@"..//..//img/icon/white_star.png");
+                    pb_str3.Image = Image.FromFile(@"..//..//img/icon/white_star.png");
+                    pb_str4.Image = Image.FromFile(@"..//..//img/icon/white_star.png");
+                    pb_str5.Image = Image.FromFile(@"..//..//img/icon/white_star.png");
+
+                    pb_str1.Image = Image.FromFile(@"..//..//img/icon/yellow_star.png");
+                    lbl_core.Text = "1/5";
+                    break;
+                case 2:
+                    //change yellow stars to white
+                    pb_str3.Image = Image.FromFile(@"..//..//img/icon/white_star.png");
+                    pb_str4.Image = Image.FromFile(@"..//..//img/icon/white_star.png");
+                    pb_str5.Image = Image.FromFile(@"..//..//img/icon/white_star.png");
+
+                    pb_str1.Image = Image.FromFile(@"..//..//img/icon/yellow_star.png");
+                    pb_str2.Image = Image.FromFile(@"..//..//img/icon/yellow_star.png");
+                    lbl_core.Text = "2/5";
+                    break;
+                case 3:
+                    //change yellow stars to white
+                    pb_str4.Image = Image.FromFile(@"..//..//img/icon/white_star.png");
+                    pb_str5.Image = Image.FromFile(@"..//..//img/icon/white_star.png");
+
+                    pb_str1.Image = Image.FromFile(@"..//..//img/icon/yellow_star.png");
+                    pb_str2.Image = Image.FromFile(@"..//..//img/icon/yellow_star.png");
+                    pb_str3.Image = Image.FromFile(@"..//..//img/icon/yellow_star.png");
+                    lbl_core.Text = "3/5";
+                    break;
+                case 4:
+                    //change yellow star to white
+                    pb_str5.Image = Image.FromFile(@"..//..//img/icon/white_star.png");
+
+                    pb_str1.Image = Image.FromFile(@"..//..//img/icon/yellow_star.png");
+                    pb_str2.Image = Image.FromFile(@"..//..//img/icon/yellow_star.png");
+                    pb_str3.Image = Image.FromFile(@"..//..//img/icon/yellow_star.png");
+                    pb_str4.Image = Image.FromFile(@"..//..//img/icon/yellow_star.png");
+                    lbl_core.Text = "4/5";
+                    break;
+                case 5:
+                    pb_str1.Image = Image.FromFile(@"..//..//img/icon/yellow_star.png");
+                    pb_str2.Image = Image.FromFile(@"..//..//img/icon/yellow_star.png");
+                    pb_str3.Image = Image.FromFile(@"..//..//img/icon/yellow_star.png");
+                    pb_str4.Image = Image.FromFile(@"..//..//img/icon/yellow_star.png");
+                    pb_str5.Image = Image.FromFile(@"..//..//img/icon/yellow_star.png");
+                    lbl_core.Text = "5/5";
+                    break;
+                default:
+                    break;
+            }
+        }
+
+
+        string a = "";
+        public string ItemImage
         {
             get
             {
-                return ptr_Item.BackgroundImage;
+                return a;
             }
             set
             {
-                ptr_Item.BackgroundImage = value;
+                //MessageBox.Show(ItemType);
+                ptr_Item.BackgroundImage = Image.FromFile(@"..//..//img" + "/" + ItemType + "/" + value + ".png");
+                a = value;
             }
         }
 
@@ -64,18 +124,19 @@ namespace BTTH3
 
         public string ItemLyric;
 
-
+        string aflat = "false";
         public string ItemLove
         {
             get
             {
-                return picLove.Text;
+                return aflat;
             }
             set
             {
                 if(value == "true")
                 {
                     picLove.BackgroundImage = Image.FromFile(@"..//..//img/icon/redheart.png");
+                    aflat = value;
                 }
             }
         }
@@ -107,8 +168,13 @@ namespace BTTH3
 
         private void ptr_Item_Click(object sender, EventArgs e)
         {
-            Form4 page = new Form4(ItemName, ItemAuthor, ItemType, ItemImage, ItemLyric);
+            Form4 page = new Form4(ItemName, ItemAuthor, ItemType, ItemImage, ItemLyric, ItemLove);
             page.Show();
+        }
+
+        private void songItem_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

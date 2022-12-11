@@ -49,7 +49,19 @@ namespace BTTH3
 
         private void bunifuImageButton1_Click(object sender, EventArgs e)
         {
-            Form3 page = new Form3();
+            Form2 page = new Form2(NamePlayList);
+            page.Show();
+        }
+
+        private void bunifuPanel1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void picPlaylist_Click(object sender, EventArgs e)
+        {
+            FormPLItem page = new FormPLItem(NamePlayList);
+            page.Text = "PlayList " + NamePlayList;
             page.Show();
         }
     }

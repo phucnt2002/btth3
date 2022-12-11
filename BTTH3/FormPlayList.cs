@@ -32,5 +32,18 @@ namespace BTTH3
                 MessageBox.Show("Enter Name PlayList!! Please!!");
             }
         }
+
+        private void FormPlayList_Load(object sender, EventArgs e)
+        {
+            try
+            {
+                MessageBox.Show(Form3.songsPlayList.Name[0]);
+                flowLayoutPanel1.Visible = true;
+            }
+            catch
+            {
+
+            }
+        }
     }
 }

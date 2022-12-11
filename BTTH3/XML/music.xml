@@ -12,11 +12,12 @@
 				1
 			</id>
 			<star>
-				null
+				0
 			</star>
 
 			<title>
-				Khi màn đêm vừa buông. Mưa vừa tuôn ở trên mái hiên em vẫn cứ uống
+				Khi màn đêm vừa buông
+				Mưa vừa tuôn ở trên mái hiên em vẫn cứ uống
 				Sương còn vương hàng trăm nỗi đau như kéo em xuống
 				Nơi vực sâu tận cùng trái tim khô cằn sỏi đá
 				Chân trời xa vắng đưa con tim em đi về đâu
@@ -52,7 +53,7 @@
 				2
 			</id>
 			<star>
-				null
+				0
 			</star>
 			<title>
 				Bước chân về miền quê
@@ -93,7 +94,7 @@
 				3
 			</id>
 			<star>
-				null
+				0
 			</star>
 			<title>
 				Sao hôm nay em gọi anh lúc ba giờ
@@ -185,7 +186,7 @@
 				4
 			</id>
 			<star>
-				null
+				0
 			</star>
 			<title>
 				Em ơi đừng khóc bóng tối trước mắt sẽ bắt em đi
@@ -240,7 +241,7 @@
 				5
 			</id>
 			<star>
-				null
+				0
 			</star>
 			<title>
 				Có khóc có cười, tình yêu anh vẫn real thế thôi
@@ -347,7 +348,7 @@
 				6
 			</id>
 			<star>
-				null
+				0
 			</star>
 
 			<title>
@@ -404,7 +405,7 @@
 				7
 			</id>
 			<star>
-				null
+				0
 			</star>
 			<title>
 				Thời gian sẽ chẳng đợi chờ điều gì
@@ -441,7 +442,7 @@
 			<name>Người Đáng Thương Là Anh</name>
 			<author>Only C</author>
 			<id>8</id>
-			<star>null</star>
+			<star>0</star>
 			<title>
 				Mỗi khi em buồn, hãy cứ khóc, anh nghe mà
 				Người anh yêu từng chẳng yếu đuối thế này đâu
@@ -499,7 +500,7 @@
 			<name>Cứu Vãn Được Không</name>
 			<author>Vương Anh Tú</author>
 			<id>9</id>
-			<star>null</star>
+			<star>0</star>
 			<title>
 				Có lẽ duyên nợ của ta ở kiếp trước
 				Giờ đã trả xong nên em rời đi
@@ -530,7 +531,7 @@
 			</name>
 			<author>Đạt Long Vinh</author>
 			<id>10</id>
-			<star>null</star>
+			<star>0</star>
 			<title>
 				Anh không cần biết quá khứ em ngày xưa
 				Anh chỉ cần nắm tay em
@@ -619,7 +620,7 @@
 			<name>Ánh Sao Và Bầu Trời</name>
 			<author>T.R.I</author>
 			<id>1</id>
-			<star>null</star>
+			<star>0</star>
 			<title>
 				Chưa bao giờ tôi thấy, em cười nhiều như hôm nay Chưa bao giờ tôi thấy, mắt em long lanh thế này Em say mê nói về anh ta, về cuộc hẹn hò ngày hôm qua
 				Người mà luôn làm em ngạc nhiên với những món quà
@@ -661,7 +662,7 @@
 			<name>Anh Sẽ Ổn Thôi</name>
 			<author>Vương Anh Tú</author>
 			<id>2</id>
-			<star>null</star>
+			<star>0</star>
 			<title>
 				Trong cơn mưa ngâu anh đâu hay biết mình buồn
 				Hạt mưa hoà lẫn với dòng lệ tuôn
@@ -702,7 +703,7 @@
 			<name>Chuyện Đôi Ta</name>
 			<author>Muộii</author>
 			<id>3</id>
-			<star>null</star>
+			<star>0</star>
 			<title>
 				Những cơn sóng xô lâu đài vỡ trong bóng đêm
 				Nỗi đau cứ như đang vội ghé thăm trái tim
@@ -757,7 +758,7 @@
 			<name>Đánh Mất Em</name>
 			<author>Quang Đăng Trần</author>
 			<id>4</id>
-			<star>null</star>
+			<star>0</star>
 			<title>
 				Chỉ còn anh lang thang chốn cũ
 				Lòng quặn đau nước mắt ướt nhoà
@@ -801,7 +802,7 @@
 			<name>Head In The Clouds</name>
 			<author>Hayd</author>
 			<id>5</id>
-			<star>null</star>
+			<star>0</star>
 			<title>
 				I miss the days when life was so simple
 				Felt like the glass was always half full
@@ -851,7 +852,7 @@
 			<name>Hôm Nay Em Cưới Rồi</name>
 			<author>Khải Đăng</author>
 			<id>6</id>
-			<star>null</star>
+			<star>0</star>
 			<title>
 				Muốn đi vài hôm
 				Xa chính nơi ta từng có phút êm đềm
@@ -903,7 +904,7 @@
 			<name>Bông Hoa Đẹp Nhất</name>
 			<author>Quân A.P</author>
 			<id>7</id>
-			<star>null</star>
+			<star>0</star>
 			<title>
 				Mãi sau này anh mới biết
 				Bông hoa đó không phải của anh
@@ -965,7 +966,7 @@
 			<name>Sao Cũng Được</name>
 			<author>Thành Đạt</author>
 			<id>8</id>
-			<star>null</star>
+			<star>0</star>
 			<title>
 				Chiếc tình đầu ban sơ như phép nhiệm màu
 				Cho đến khi em gặp người sau
@@ -1022,7 +1023,7 @@
 			<name>Sinh Ra Đã Là Thứ Đối Lập Nhau</name>
 			<author>Emcee L</author>
 			<id>9</id>
-			<star>null</star>
+			<star>0</star>
 			<title>
 				Em như là đại dương xanh ngắt khiến bao người ao ước
 				Còn anh là đám lá khô rơi lặng yên
@@ -1082,7 +1083,7 @@
 			<name>Tệ Thật Anh Nhớ Em</name>
 			<author>Thanh Hưng</author>
 			<id>10</id>
-			<star>null</star>
+			<star>0</star>
 			<title>
 				Nắng nhẹ nhàng vội mang hơi ấm cuối con đường
 				Ngày cứ trôi đi mọi thứ êm đềm vẫn như bình thường
@@ -1131,7 +1132,7 @@
 			<name>Cô Gái M52</name>
 			<author>HuyR</author>
 			<id>1</id>
-			<star>null</star>
+			<star>0</star>
 			<title>
 				Là cô gái hay mộng mơ
 				Xinh đẹp như tiên giáng trần
@@ -1217,7 +1218,7 @@
 			<name>Đưa Nhau Đi Trốn</name>
 			<author>Linh Cáo, Đen Vâu</author>
 			<id>2</id>
-			<star>null</star>
+			<star>0</star>
 			<title>
 				Thật lòng em mơ, mơ cùng anh đi đến tận cùng
 				Tận cùng chân mây, vượt núi cao hay biển sâu
@@ -1309,7 +1310,7 @@
 			<name>Hai Triệu Năm</name>
 			<author>Đen Vâu</author>
 			<id>3</id>
-			<star>null</star>
+			<star>0</star>
 			<title>
 				Anh cô đơn giữa tinh không này
 				Muôn con sóng cuốn xô vào đây
@@ -1403,7 +1404,7 @@
 			<name>Lối Nhỏ</name>
 			<author>Đen Vâu</author>
 			<id>4</id>
-			<star>null</star>
+			<star>0</star>
 			<title>
 				Em vào đời bằng đại lộ còn anh vào đời bằng lối nhỏ
 				Anh nhớ mình đã từng thổ lộ anh nhớ rằng em đã chối bỏ
@@ -1471,7 +1472,7 @@
 			<name>Mười Năm</name>
 			<author>Đen Vâu</author>
 			<id>5</id>
-			<star>null</star>
+			<star>0</star>
 			<title>
 				Ayy
 				It's Den Vau
@@ -1567,7 +1568,7 @@
 			<name>Điêu Toa</name>
 			<author>Masew x Pháo</author>
 			<id>6</id>
-			<star>null</star>
+			<star>0</star>
 			<title>
 				Anh àh….anh àh..
 				Anh àh….anh àh..
@@ -1613,7 +1614,7 @@
 			<name>Ex's Hate Me</name>
 			<author>B Ray, GREY D</author>
 			<id>7</id>
-			<star>null</star>
+			<star>0</star>
 			<title>
 				All my ex’s hate me,
 				And I hate them back,
@@ -1675,7 +1676,7 @@
 			<name>Vệ Tinh</name>
 			<author>HIEUTHUHAI</author>
 			<id>8</id>
-			<star>null</star>
+			<star>0</star>
 			<title>
 				Hey Kewtiie
 				Baby em là một ngôi sao
@@ -1766,7 +1767,7 @@
 			<name>Yêu 5</name>
 			<author>Rhymastic</author>
 			<id>9</id>
-			<star>null</star>
+			<star>0</star>
 			<title>
 				Xin những bối rối nàу cứ thế lên ngôi
 				Xin con tim rẽ lối tìm giâу phút nghẹn lời
@@ -1812,7 +1813,7 @@
 			<name>2 Phút Hơn (KAIZ Remix)</name>
 			<author>Pháo</author>
 			<id>10</id>
-			<star>null</star>
+			<star>0</star>
 			<title>
 				Tay em đang run run nhưng anh thì cứ rót đi
 				Anh mà không nể em là khi mà anh không hết ly
