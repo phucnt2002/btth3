@@ -30,7 +30,19 @@ namespace BTTH3
 
         private void bunifuImageButton1_Click(object sender, EventArgs e)
         {
-            int core = Int32.Parse(lbl_core.Text);
+           double core = Convert.ToDouble(lbl_core.Text);
+            if(core!= 0)
+            {
+                for (int i = 0; i < Form1.songs.Name.Count; i++)
+                {
+                    if (Form1.songs.Name[i] == name)
+                    {
+                        double coreOld = Convert.ToInt32(Form1.songs.Star[i]);
+                        string coreNew = Convert.ToString(Math.Round((coreOld + core) / 2));
+                        Form1.songs.Star[i] = coreNew;
+                    }
+                }
+            }
             this.Close();
         }
 

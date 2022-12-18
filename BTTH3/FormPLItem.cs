@@ -37,6 +37,7 @@ namespace BTTH3
                             x.ItemImage = Form1.songs.Id[i];
                             x.ItemAuthor = Form1.songs.Author[i];
                             x.ItemLove = Form1.songs.Love[i];
+                            x.ItemStar = Form1.songs.Star[i];
                             x.ItemLyric = Form1.songs.Title[i];
                             //MessageBox.Show(this.Parent.Parent.GetType().ToString());
                             flowLayoutPanel1.Controls.Add(x);

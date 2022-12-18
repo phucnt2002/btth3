@@ -171,6 +171,7 @@ namespace BTTH3
                         x.ItemAuthor = Form1.songs.Author[rand[i]];
                         x.ItemLove = Form1.songs.Love[rand[i]];
                         x.ItemLyric = Form1.songs.Title[rand[i]];
+                        x.ItemStar = Form1.songs.Star[rand[i]];
                         flowLayoutPanel1.Controls.Add(x);
                     }
                 }
@@ -192,6 +193,7 @@ namespace BTTH3
                     x.ItemAuthor = Form1.songs.Author[i];
                     x.ItemLove = Form1.songs.Love[i];
                     x.ItemLyric = Form1.songs.Title[i];
+                    x.ItemStar = Form1.songs.Star[i];
                     //MessageBox.Show(Form1.songs.Id[i], Form1.songs.Type[i]);
                     flowLayoutPanel1.Controls.Add(x);
                 }

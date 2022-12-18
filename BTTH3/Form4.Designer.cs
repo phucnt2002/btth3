@@ -71,7 +71,6 @@
             this.btnExit.AllowToggling = false;
             this.btnExit.AllowZooming = true;
             this.btnExit.AllowZoomingOnFocus = false;
-            this.btnExit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnExit.BackColor = System.Drawing.Color.Transparent;
             this.btnExit.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnExit.ErrorImage = ((System.Drawing.Image)(resources.GetObject("btnExit.ErrorImage")));
@@ -81,19 +80,18 @@
             this.btnExit.ImageActive = null;
             this.btnExit.ImageLocation = null;
             this.btnExit.ImageMargin = 20;
-            this.btnExit.ImageSize = new System.Drawing.Size(36, 42);
-            this.btnExit.ImageZoomSize = new System.Drawing.Size(56, 62);
+            this.btnExit.ImageSize = new System.Drawing.Size(30, 30);
+            this.btnExit.ImageZoomSize = new System.Drawing.Size(50, 50);
             this.btnExit.InitialImage = ((System.Drawing.Image)(resources.GetObject("btnExit.InitialImage")));
-            this.btnExit.Location = new System.Drawing.Point(1224, -1);
-            this.btnExit.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnExit.Location = new System.Drawing.Point(0, 0);
             this.btnExit.Name = "btnExit";
             this.btnExit.Rotation = 0;
             this.btnExit.ShowActiveImage = true;
             this.btnExit.ShowCursorChanges = true;
             this.btnExit.ShowImageBorders = true;
             this.btnExit.ShowSizeMarkers = false;
-            this.btnExit.Size = new System.Drawing.Size(56, 62);
-            this.btnExit.TabIndex = 5;
+            this.btnExit.Size = new System.Drawing.Size(50, 50);
+            this.btnExit.TabIndex = 7;
             this.btnExit.ToolTipText = "";
             this.btnExit.WaitOnLoad = false;
             this.btnExit.Zoom = 20;
@@ -143,7 +141,7 @@
             this.panel1.Controls.Add(this.txtLyric);
             this.panel1.Location = new System.Drawing.Point(551, 369);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(753, 217);
+            this.panel1.Size = new System.Drawing.Size(764, 217);
             this.panel1.TabIndex = 28;
             // 
             // txtLyric

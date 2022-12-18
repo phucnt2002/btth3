@@ -221,6 +221,7 @@
             this.lbl_core.Size = new System.Drawing.Size(51, 20);
             this.lbl_core.TabIndex = 22;
             this.lbl_core.Text = "label1";
+            this.lbl_core.Visible = false;
             // 
             // songItem
             // 
