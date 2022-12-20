@@ -38,7 +38,15 @@ namespace BTTH3
                     if (Form1.songs.Name[i] == name)
                     {
                         double coreOld = Convert.ToInt32(Form1.songs.Star[i]);
-                        string coreNew = Convert.ToString(Math.Round((coreOld + core) / 2));
+                        string coreNew;
+                        if (coreOld!= 0)
+                        {
+                            coreNew = Convert.ToString(Math.Round((coreOld + core) / 2));
+                        }
+                        else
+                        {
+                            coreNew = Convert.ToString(core);
+                        }
                         Form1.songs.Star[i] = coreNew;
                     }
                 }

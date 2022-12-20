@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Newtonsoft.Json.Linq;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -186,6 +187,55 @@ namespace BTTH3
         private void songItem_Load(object sender, EventArgs e)
         {
             loadFeeadbacks(Convert.ToInt32(ItemStar));
+        }
+
+        private void picLove_Click_1(object sender, EventArgs e)
+        {
+            for (int i = 0; i < Form1.songs.Name.Count; i++)
+            {
+                if (Form1.songs.Name[i] == ItemName)
+                {
+                    if (Form1.songs.Love[i] != "false")
+                    {
+                        picLove.BackgroundImage = Image.FromFile(@"..//..//img/icon/heart (1).png");
+                        Form1.songs.Love[i] = "false";
+                        aflat = "false";
+                    }
+                    else
+                    {
+                        picLove.BackgroundImage = Image.FromFile(@"..//..//img/icon/redheart.png");
+                        Form1.songs.Love[i] = "true";
+                        aflat = "true";
+                    }
+                }
+            }
+
+        }
+
+        public System.Drawing.Image SwapClipboardImage(System.Drawing.Image replacementImage)
+        {
+            System.Drawing.Image returnImage = null;
+            if (Clipboard.ContainsImage())
+            {
+                returnImage = Clipboard.GetImage();
+                Clipboard.SetImage(replacementImage);
+            }
+            return returnImage;
+        }
+
+        private void ptr_Item_Click_1(object sender, EventArgs e)
+        {
+            Clipboard.Clear();
+            Clipboard.SetImage(Image.FromFile(@"..//..//img" + "/" + ItemType + "/" + ItemImage + ".png"));
+            Form4 page = new Form4(ItemName, ItemAuthor, ItemType, ItemImage, ItemLyric, ItemLove);
+            page.Show();
+        }
+
+        private void picAdd_Click_1(object sender, EventArgs e)
+        {
+            Clipboard.Clear();
+            Clipboard.SetImage(Image.FromFile(@"..//..//img" + "/" + ItemType + "/" + ItemImage + ".png"));
+            Clipboard.SetText("Bài hát:\t" + ItemName + "\n" + "Thể loại:\t"+ItemType + "\n" + "Tác giả:\t"+ ItemAuthor + "\n" +"Lời bài hát: "+"\n"+ ItemLyric);
         }
     }
 }

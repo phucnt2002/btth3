@@ -66,5 +66,28 @@ namespace BTTH3
             page.Text = "PlayList " + NamePlayList;
             page.Show();
         }
+
+        private void bunifuGradientPanel1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bunifuImageButton1_Click_1(object sender, EventArgs e)
+        {
+            Form2 page = new Form2(NamePlayList);
+            page.Show();
+        }
+
+        private void picPlaylist_Click(object sender, EventArgs e)
+        {
+            FormPLItem page = new FormPLItem(NamePlayList);
+            page.Text = "PlayList " + NamePlayList;
+            page.Show();
+        }
+
+        private void bunifuIconButton1_Click(object sender, EventArgs e)
+        {
+            this.Visible = false;
+        }
     }
 }

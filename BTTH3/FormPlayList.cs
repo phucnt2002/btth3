@@ -20,17 +20,7 @@ namespace BTTH3
 
         private void bunifuImageButton1_Click(object sender, EventArgs e)
         {
-            string content = Interaction.InputBox("Enter Your Playlist Name", "Name Playlist","", 500, 300);
-            if(content != "")
-            {
-                playlist x = new playlist();
-                x.NamePlayList = content;
-                flowLayoutPanel1.Controls.Add(x);
-            }
-            else
-            {
-                MessageBox.Show("Enter Name PlayList!! Please!!");
-            }
+           
         }
 
         private void FormPlayList_Load(object sender, EventArgs e)
@@ -42,6 +32,21 @@ namespace BTTH3
             catch
             {
 
+            }
+        }
+
+        private void bunifuButton21_Click(object sender, EventArgs e)
+        {
+            string content = Interaction.InputBox("Enter Your Playlist Name", "Name Playlist", "", 500, 300);
+            if (content != "")
+            {
+                playlist x = new playlist();
+                x.NamePlayList = content;
+                flowLayoutPanel1.Controls.Add(x);
+            }
+            else
+            {
+                MessageBox.Show("Enter Name PlayList!! Please!!");
             }
         }
     }

@@ -43,7 +43,15 @@ namespace BTTH3
             }
         }
 
-        private void bunifuButton21_Click(object sender, EventArgs e)
+        private void bunifuButton22_Click_1(object sender, EventArgs e)
+        {
+            root.RemoveAll();
+            dgv.Rows.Clear();
+            doc.Save(@"..//..//XML/history.xml");
+        }
+
+
+        private void bunifuButton21_Click_1(object sender, EventArgs e)
         {
             int rowIdex = dgv.CurrentCell.RowIndex;
             string name = dgv.Rows[rowIdex].Cells[0].Value.ToString();
@@ -56,13 +64,6 @@ namespace BTTH3
 
             Form4 page = new Form4(name, author, type, image, lyric, love);
             page.Show();
-        }
-
-        private void bunifuButton22_Click(object sender, EventArgs e)
-        {
-            root.RemoveAll();
-            dgv.Rows.Clear();
-            doc.Save(@"..//..//XML/history.xml");
         }
     }
 }
