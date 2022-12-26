@@ -1,16 +1,21 @@
 ﻿using BTTH3.Properties;
+using Microsoft.VisualBasic.ApplicationServices;
 using Newtonsoft.Json.Linq;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Xml;
+using System.IO;
+using System.Globalization;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.TaskbarClock;
+using System.Security.Cryptography;
 
 namespace BTTH3
 {
@@ -176,6 +181,27 @@ namespace BTTH3
             pb_str4.Image = Resources.yellow_star;
             pb_str5.Image = Resources.yellow_star;
             lbl_core.Text = "5";
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            string despath = "";
+            string fileToCopy = "";
+
+            FolderBrowserDialog ofd = new FolderBrowserDialog();
+            if (ofd.ShowDialog() == DialogResult.OK)
+            {
+                despath = ofd.SelectedPath;
+            }
+
+
+            fileToCopy = "C:\\Users\\LENOVO\\Desktop\\BTTH3\\BTTH3\\music\\" + type + "\\" + img + ".mp3";
+            File.Copy(fileToCopy, despath + Path.GetFileName(fileToCopy));
+        }
+
+        private void wplayer_Enter(object sender, EventArgs e)
+        {
+
         }
 
         private void picLove_Click(object sender, EventArgs e)

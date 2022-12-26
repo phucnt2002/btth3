@@ -373,10 +373,10 @@ namespace BTTH3
             foreach (var item in flowLayoutPanel1.Controls)
             {
                 var song = (songItem)item;
-                song.Visible = song.ItemName.ToLower().ToLower().Contains(txt.Trim().ToLower());
+                song.Visible = RemoveUnicode(song.ItemName.ToLower().ToLower()).Contains(txt.Trim().ToLower()) || song.ItemName.ToLower().ToLower().Contains(txt.Trim().ToLower());
                 if (song.Visible == false)
                 {
-                    song.Visible = song.ItemAuthor.ToLower().ToLower().Contains(txt.Trim().ToLower());
+                    song.Visible = RemoveUnicode(song.ItemAuthor.ToLower().ToLower()).Contains(txt.Trim().ToLower()) || song.ItemAuthor.ToLower().ToLower().Contains(txt.Trim().ToLower());
                 }
 
             }
@@ -400,7 +400,6 @@ namespace BTTH3
         private void bunifuButton21_Click(object sender, EventArgs e)
         {
             Environment.Exit(0);
-
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)

@@ -51,6 +51,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.picSong = new System.Windows.Forms.PictureBox();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.wplayer)).BeginInit();
@@ -61,6 +62,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pb_str2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_str1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picSong)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // btnExit
@@ -100,6 +102,7 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.Transparent;
+            this.panel2.Controls.Add(this.pictureBox1);
             this.panel2.Controls.Add(this.lbl_core);
             this.panel2.Controls.Add(this.panel1);
             this.panel2.Controls.Add(this.wplayer);
@@ -163,6 +166,7 @@
             this.wplayer.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("wplayer.OcxState")));
             this.wplayer.Size = new System.Drawing.Size(1280, 46);
             this.wplayer.TabIndex = 26;
+            this.wplayer.Enter += new System.EventHandler(this.wplayer_Enter);
             // 
             // bunifuImageButton1
             // 
@@ -351,6 +355,17 @@
             this.timer1.Interval = 50;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(364, 574);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(53, 49);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 29;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            // 
             // Form4
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -378,6 +393,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pb_str2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_str1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picSong)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -404,5 +420,6 @@
         private System.Windows.Forms.Label txtLyric;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label lbl_core;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
